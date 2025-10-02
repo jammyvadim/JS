@@ -3,6 +3,7 @@
 // Присвоїти кожному з них значення: ‘hello’,’owu’,’com’, ‘ua’, 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
 // Вивести кожну змінну за допомогою: console.log
 
+
 let var1='hello'
 let var2='owu'
 let var3='com'
