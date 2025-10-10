@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: SansSerif, "SansSerif";
+}
+header{
+    display: flow;
+    background: lightgray;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 3px;
+}
+.a_current{
+    background: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+    border-style: solid;
+    border-color: black;
+    padding: 7px;
+}
+footer{
+    /*display: flex;*/
+    background: lightgray;
+}
