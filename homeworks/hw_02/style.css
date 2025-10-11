@@ -4,9 +4,12 @@ body{
     font-family: SansSerif, "SansSerif";
 }
 header{
-    display: flow;
-    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: antiquewhite;
 }
+
 aside{
     display: flex;
     flex-direction: column;
@@ -29,5 +32,7 @@ a{
 }
 footer{
     /*display: flex;*/
-    background: lightgray;
+    background: none;
+    font-size: 18px;
+    color: blue;
 }

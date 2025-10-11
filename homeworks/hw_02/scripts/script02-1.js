@@ -2,19 +2,19 @@
 
 let book1={
     title:'Майстер і Маргарита',
-    pageCount: 300,
+    pageCount: 415,
     genre: 'Фантастика'
 }
 
 let book2={
     title:'1984',
-    pageCount: 500,
+    pageCount: 368,
     genre: 'Антиутопія'
 }
 
 let book3={
     title:'Енеїда',
-    pageCount: 400,
+    pageCount: 440,
     genre: 'Поема'
 }
 
