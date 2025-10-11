@@ -18,6 +18,7 @@ let book3={
     genre: 'Поема'
 }
 
+
 // console.log('------- script 2-1: #LARqoUj5I -------')
 
 // console.log(book1)
