@@ -4,8 +4,7 @@
 console.log('------- script 2-2: #sA3Gg1sCp -------')
 
 book1.authors = [
-    {Name:'Іван Котляревський', Age: 256},
-    {Name: 'Publius Vergilius Maro ', Age: 2095}
+    {Name:'Михайло Булгаков', Age: 134},
 ]
 
 book2.authors = [
