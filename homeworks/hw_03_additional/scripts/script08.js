@@ -15,10 +15,17 @@ let citiesWithId = [
 let UsersAndCities=[]
 let i=0
 
+let user_adress={}
+let user_with_address={}
+
 for (const user of usersWithId) {
     for (const city of citiesWithId) {
         if (user.id === city.user_id){
-            UsersAndCities[i] = {...user,...city}
+            // UsersAndCities[i] = {...user,...city}
+            user_with_address = user
+            user_adress = city
+            user_with_address.address = user_adress
+            UsersAndCities[i]=user_with_address
             i++
         }
     }
