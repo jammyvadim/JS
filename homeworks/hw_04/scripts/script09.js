@@ -1,13 +1,32 @@
-console.log('#gEFoxMMO')
-console.log('– створити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write')
+console.log('#bovDJDTIjt')
+console.log('– створити функцію, яка приймає масив об’єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об’єкту окремий блок.')
 
-function doc_write_arr_as_ul(arr){
-    document.write('<ul>')
+function doc_write_arr_obj(arr){
+
     for (let i = 0; i < arr.length; i++){
-        document.write('<li>' + arr[i] + '</li>')
+        document.write('<div>')
+        document.write('user ' + i + ': ')
+        document.write('id: ' + arr[i].id + ', ')
+        document.write('name: ' + arr[i].name + ', ')
+        document.write('age: ' + arr[i].age)
+        document.write('</div>')
     }
-    document.write('</ul>')
 }
-let arr=['abc', 25, true, 100500, 'bca', false, 0]
-// document.write(`<p>${arr}</p>`)
-doc_write_arr_as_ul(arr)
+let arr=[
+    {
+        id: 1,
+        name: 'Vasia',
+        age: 30
+    },
+    {
+        id: 2,
+        name: 'Petia',
+        age: 32
+    },
+    {
+        id: 3,
+        name: 'Marusia',
+        age: 18
+    },
+]
+doc_write_arr_obj(arr)
