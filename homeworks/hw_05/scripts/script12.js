@@ -15,8 +15,7 @@ let numberOfItem2=5
 
 let change_items_of_arr=(arr, numberOfItem1, numberOfItem2)=>{
     let valueOfIndex1 = arr[numberOfItem1]
-    let valueOfIndex2 = arr[numberOfItem2]
-    arr[numberOfItem1]=valueOfIndex2
+    arr[numberOfItem1]=arr[numberOfItem2]
     arr[numberOfItem2]=valueOfIndex1
 }
 

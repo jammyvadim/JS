@@ -3,14 +3,12 @@ console.log('– створити функцію, яка обчислює та �
 
 
 function get_square_circle_num(circle_radius_num){
-    let result = Math.PI * circle_radius_num ** 2
-    return result
+    return Math.PI * circle_radius_num ** 2
 }
 
 function get_square_cylinder_num(cylinder_height_num, cylinder_radius_num){
     let s=get_square_circle_num(cylinder_radius_num)
-    let result = s * cylinder_height_num
-    return result
+    return s * cylinder_height_num
 }
 
 let h= 100

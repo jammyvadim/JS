@@ -3,8 +3,7 @@ console.log('– створити функцію swap(arr,index1,index2). Фун
 console.log('Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]')
 function change_items_of_arr(arr, index1, index2){
     let valueOfIndex1 = arr[index1]
-    let valueOfIndex2 = arr[index2]
-    arr[index1]=valueOfIndex2
+    arr[index1]=arr[index2]
     arr[index2]=valueOfIndex1
 }
 
