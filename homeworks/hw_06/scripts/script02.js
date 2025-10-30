@@ -2,7 +2,6 @@ console.log('#8lld9HMxXWB')
 console.log('– Перевести до великого регістру наступні стрінгові значення')
 console.log('"hello world", "lorem ipsum", "javascript is cool"')
 
-
 let sentence1 = 'hello world'
 let sentence2 = 'lorem ipsum'
 let sentence3 = 'javascript is cool'

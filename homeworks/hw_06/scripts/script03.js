@@ -1,22 +1,17 @@
-console.log('#Mbiz5K4yFe7')
-console.log('– створити функцію, яка обчислює та повертає площу циліндру висотою h, та радіусом r')
+console.log('#ClDsAm7xba7')
+console.log('– Перевести до нижнього регістру наступні стрінгові значення')
+console.log(' "HELLO WORLD, LOREM IPSUM, JAVASCRIPT IS COOL" ')
 
-// function get_square_circle_num(circle_radius_num){
-//     let result = Math.PI * circle_radius_num ** 2
-//     return result
-// }
-//
-// function get_square_cylinder_num(cylinder_height_num, cylinder_radius_num){
-//     let s=get_square_circle_num(cylinder_radius_num)
-//     let result = s * cylinder_height_num
-//     return result
-// }
+let sentence1 = 'HELLO WORLD'
+let sentence2 = 'LOREM IPSUM'
+let sentence3 = 'JAVASCRIPT IS COOL'
 
-let h= 100
-let r = 10
+let get_LowerCase_str = (str) => str.toLowerCase()
 
-let get_square_cylinder_num = (r, h) => Math.PI * r ** 2 * h
+console.log(get_LowerCase_str(sentence1))
+console.log(get_LowerCase_str(sentence2))
+console.log(get_LowerCase_str(sentence3))
 
-console.log('h=' + h)
-console.log('r=' + r)
-console.log('get_square_cylinder_num(h,r)=' + get_square_cylinder_num(h,r))
+document.write('<p>' + get_LowerCase_str(sentence1) +'</p>')
+document.write('<p>' + get_LowerCase_str(sentence2) +'</p>')
+document.write('<p>' + get_LowerCase_str(sentence3) +'</p>')
