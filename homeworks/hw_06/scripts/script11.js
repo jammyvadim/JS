@@ -1,11 +1,5 @@
-console.log('#bolvdlhP')
-console.log('описати колоду карт (від 6 до туза без джокерів). Більшу частину колоди можна описати з використанням циклу')
-console.log('Після опису, використовуючи функції масивів:')
-console.log(' – знайти піковий туз')
-console.log(' – всі шістки')
-console.log(' – всі червоні карти')
-console.log(' – всі буби')
-console.log(' – всі трефи від 9 та більше')
+console.log('#EP5I1UUzAX')
+console.log('Взяти описану колоду карт, та за допомогою reduce “упакувати” всі карти по “мастях” в об’єкт')
 
 const  cardSuits = [
     {
@@ -103,26 +97,17 @@ for (cardSuit of cardSuits) {
     }
 }
 
-console.log('---------------------------------')
-console.log('Колода карт')
-console.log(deck_of_cards)
+const result_object = deck_of_cards.reduce((accumulator, currentValue) => {
+    if (currentValue.deck_suit_name_en === 'spades') {
+        accumulator.spades.push(currentValue.deck_card_full_name_en);
+    } else if (currentValue.deck_suit_name_en === 'diamonds') {
+        accumulator.diamonds.push(currentValue.deck_card_full_name_en);
+    } else if (currentValue.deck_suit_name_en === 'hearts') {
+        accumulator.hearts.push(currentValue.deck_card_full_name_en);
+    } else if (currentValue.deck_suit_name_en === 'clubs') {
+        accumulator.clubs.push(currentValue.deck_card_full_name_en);
+    }
+    return accumulator;
+}, {spades: [], diamonds: [], hearts: [], clubs: []})
 
-console.log('– знайти піковий туз')
-let card_ace_spades = deck_of_cards.filter(card => card.deck_card_name_en==='ace' && card.deck_suit_name_en==='spades')
-console.log(card_ace_spades)
-
-console.log('– всі шістки')
-let cards_sixes = deck_of_cards.filter(card => card.deck_card_order===6)
-console.log(cards_sixes)
-
-console.log('– всі червоні карти')
-let cards_red_color = deck_of_cards.filter(card => card.deck_suit_color==='red')
-console.log(cards_red_color)
-
-console.log('– всі буби')
-let cards_diamond_suit = deck_of_cards.filter(card => card.deck_suit_name_en==='diamonds')
-console.log(cards_diamond_suit)
-
-console.log('– всі трефи від 9 та більше')
-let cards_clubs_9_and_more = deck_of_cards.filter(card => card.deck_suit_name_en==='clubs' && card.deck_card_order>=9)
-console.log(cards_clubs_9_and_more)
+console.log(result_object)
