@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    padding-top: 10px;
+}
+header{
+    display: flex;
+    width: 100%;
+    background: antiquewhite;
+}
+header h1{
+    padding: 5px 0 5px 50px;
+    width: 40vw;
+}
+
+.header_div_pages{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    padding: 5px 50px 5px 0;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.a_current{
+    color: blue;
+    /*background: lightgray;*/
+    font-weight: bold;
+    font-size: 18px;
+    border-style: solid;
+    /*border-color: black;*/
+    /*margin: 7px;*/
+}
+
+main{
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+/*.product-image{*/
+div img{
+    width: 200px;
+}
+
+/*for script08*/
+.users-box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+    background: yellow;
+}
