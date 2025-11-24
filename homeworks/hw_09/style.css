@@ -123,6 +123,15 @@ div img{
 img{
     height: 300px;
 }
+.div_item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-color: red;
+    padding-bottom: 20px;
+}
 .item_title{
     display: flex;
     flex-direction: column;
