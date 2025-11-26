@@ -5,13 +5,19 @@ console.log('Інфу НЕ виводити в консоль, а малюват
 
 let arr= []
 let str = localStorage.getItem('sessionsList')
+const ul_index_05_sessions = document.getElementById('ul_index_05_sessions')
 
 if (str === null){
-    arr[0]=(Date())
+    arr[0]='the page index05 has no visitors yer'
 }else{
     arr = JSON.parse(str)
-    arr.push(Date())
 }
 
-str = JSON.stringify(arr)
-localStorage.setItem('sessionsList', str)
+for (const item of arr) {
+    const li_index_05_session=document.createElement('li')
+    li_index_05_session.classList.add('li_index_05_session')
+    li_index_05_session.innerText = item
+    ul_index_05_sessions.append(li_index_05_session)
+}
+
+
