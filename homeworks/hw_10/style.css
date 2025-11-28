@@ -167,3 +167,12 @@ img{
     padding: 10px;
     list-style: none;
 }
+
+/*style for homework 09.08*/
+#table_main{
+    display: table;
+    width: 100%;
+}
+#table_main td{
+    border-style: solid;
+}

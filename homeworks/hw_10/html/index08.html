@@ -27,16 +27,24 @@
 <main>
 
     <p>--------------------------------------------------------------------------</p>
-    <h3>#</h3>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <h3>#kUSgFqWY</h3>
+    <p>Створити 3 інпута та кнопку.</p>
+    <p>Один визначає кількість рядків, другий – кількість ячеєк, третій – вміст ячеєк.</p>
+    <p>При натисканні кнопки вся ця інформація зчитується і формується табличка з відповідним вмістом.</p>
     <p>--------------------------------------------------------------------------</p>
 
+    <form name="form_table_parameters">
+        <h5>Input parameters of table::</h5>
+        <input name="input_row_count" type="number" placeholder="row count">
+        <input name="input_column_count" type="number" placeholder="column count">
+        <input name="input_cell_value" type="text" placeholder="cell value">
+        <button name="button_submit">submit</button>
+    </form>
+
+    <table id="table_main"></table>
+
     <script src="../scripts/script08.js"></script>
+
 </main>
 
 </body>
