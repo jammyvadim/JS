@@ -27,14 +27,34 @@
 <main>
 
     <p>--------------------------------------------------------------------------</p>
-    <h3>#</h3>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <h3>#RbQGnH5DuC</h3>
+    <p>В localStorage зберігаються масиви.</p>
+    <p>Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об’єкт</p>
+    <p>сигнатура функції –</p>
+    <p>addToLocalStorage(arrayName:string,objToAdd:any{}):void</p>
     <p>--------------------------------------------------------------------------</p>
+
+    <form id="id_form_main">
+
+        <h5>LocalStorage existing items:</h5>
+        <ul id="ul_local_storage"></ul>
+
+        <h5>Input array name (existing or new):</h5>
+<!--        <label for="id_input_arrayName">array name:</label>-->
+        <input type="text" name="input_arrayName" id="id_input_arrayName" placeholder="arrayName">
+        <p id="is_arr_existing_in_local_storage"></p>
+
+        <div class="div_obj_fields">
+            <h5>Input fields values of Object {customer}:</h5>
+            <input name="input_customer_name" id="id_input_customer_name" placeholder="name">
+            <input name="input_customer_phone" id="id_input_customer_phone" placeholder="phone">
+            <input name="input_customer_city" id="id_input_customer_city" placeholder="city">
+        </div>
+
+        <h5>Add Object {customer} to array:</h5>
+        <button name="button_submit" id="id_button_submit">submit</button>
+
+    </form>
 
     <script src="../scripts/script07.js"></script>
 </main>
