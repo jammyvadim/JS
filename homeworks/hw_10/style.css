@@ -176,3 +176,7 @@ img{
 #table_main td{
     border-style: solid;
 }
+/*style for homework 09.08*/
+#ul_arr_part{
+    list-style: none;
+}
