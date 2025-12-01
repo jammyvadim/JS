@@ -81,7 +81,6 @@ arr_page_update()
 set_buttons_disability()
 
 button_prev.onclick=function () {
-    button_next.hidden = false
     if (page_num > 1) {
         page_num--
         arr_page_update()
@@ -91,7 +90,6 @@ button_prev.onclick=function () {
     set_buttons_disability()}
 
 button_next.onclick=function () {
-    button_prev.hidden = false
     if (page_num < pages_count) {
         page_num++
         arr_page_update()
