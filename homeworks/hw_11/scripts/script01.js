@@ -38,7 +38,6 @@ fetch('https://dummyjson.com/carts')
                       discountPercentage: ${product.discountPercentage},
                       discountedTotal: ${product.discountedTotal},
                     `
-
                 const img_product = document.createElement('img');
                 img_product.classList.add('img_product')
                 img_product.src = product.thumbnail;

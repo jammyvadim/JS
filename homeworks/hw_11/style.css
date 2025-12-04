@@ -73,3 +73,32 @@ main{
 .img_product{
     width: 100px;
 }
+
+/*style for homework 11.02*/
+.div_recipe{
+    display: flex;
+    flex-direction: column;
+}
+.div_recipe_main_info{
+    display:flex;
+    gap: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+.div_recipe_main_info button{
+    border-style: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: darkblue;
+    color: white;
+    font-size: 14px;
+}
+.div_recipe_details{
+    display: grid;
+    background: lightgray;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.img_recipe{
+    height: 300px;
+}
