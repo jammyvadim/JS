@@ -54,30 +54,59 @@ a{
 }
 
 main{
-    padding-left: 30px;
+    padding-left: 10px;
     font-size: 18px;
 }
 
 /*style for homework 11.01*/
+
 .divWithInfo{
     font-weight: bold;
 }
-.div_products{
+#div_carts{
     display: flex;
-    border-style: solid;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.div_products{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background: lightgray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
     /*border-style: solid;*/
+}
+.div_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background: white;
+    border-style: none;
+    border-radius: 10px;
+    margin: 10px;
 }
 .p_info{
     color: blue;
+    padding: 10px;
 }
 .img_product{
-    width: 100px;
+    background: none;
+    padding: 20px;
+    /*width: 200px;*/
 }
 
 /*style for homework 11.02*/
+#h3_recipe_list_title{
+    color: blue;
+    margin: 10px;
+}
 .div_recipe{
     display: flex;
     flex-direction: column;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 .div_recipe_main_info{
     display:flex;
@@ -96,9 +125,27 @@ main{
 }
 .div_recipe_details{
     display: grid;
-    background: lightgray;
+    background: none;
+    border-style: none;
+    border-radius: 10px;
     grid-template-columns: 25% 25% 25% 25%;
+
 }
+
+.div_recipe_other_info, .ol_ingredients, .ul_instructions, .img_recipe{
+    border-style:none;
+    background: lightgray;;
+    border-radius: 10px;
+    /*padding: 10px;*/
+    margin: 10px;
+    padding-left: 30px;
+    height: 100%;
+}
+
 .img_recipe{
-    height: 300px;
+    /*max-height: 100vh;*/
+    width: 20vw;
+    object-fit: cover;
+
+    /*width: 300px;*/
 }

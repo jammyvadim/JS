@@ -27,6 +27,7 @@ fetch('https://dummyjson.com/carts')
             div_products.classList.add('div_products')
             for (const product of cart.products) {
                 const div_product = document.createElement('div');
+                div_product.classList.add('div_product')
                 const p_info = document.createElement('p');
                 p_info.classList.add('p_info')
                 p_info.innerText = `
